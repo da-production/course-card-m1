@@ -1,0 +1,237 @@
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  height: 100%;
+}
+body::before {
+  content: "";
+  background-image: url("../images/motif.jpg");
+  position: absolute;
+  background-repeat: repeat;
+  background-size: 250px;
+  opacity: 0.2;
+  z-index: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.course-card-container.border-rounded .course-card-content {
+  border-radius: 15px;
+}
+.course-card-container.border-rounded .course-card-content .course-head {
+  padding: 10px;
+}
+.course-card-container.border-rounded .course-card-content .course-head img {
+  border-radius: 15px;
+}
+.course-card-container.border-rounded .course-card-description {
+  border-radius: 15px;
+}
+
+.course-card-container {
+  padding: 15px;
+  position: relative;
+}
+.course-card-container .course-card-content {
+  cursor: pointer;
+  border: 1px solid #f1f1f1;
+  background-color: #fff;
+}
+.course-card-container .course-card-content .course-head {
+  height: 200px;
+  overflow: hidden;
+}
+.course-card-container .course-card-content .course-head img {
+  width: 100%;
+  height: 100%;
+}
+.course-card-container .course-card-content .course-body {
+  margin-top: 15px;
+}
+.course-card-container .course-card-content .course-body ul.categories {
+  list-style: none;
+  margin: 0 15px;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.course-card-container .course-card-content .course-body ul.categories li {
+  margin-right: 5px;
+}
+.course-card-container .course-card-content .course-body ul.categories li a {
+  display: block;
+  color: #5d7ca5;
+  background-color: #dfe9f5;
+  text-decoration: none;
+  padding: 5px 10px;
+  font-size: 12px;
+  border-radius: 15px;
+}
+.course-card-container .course-card-content .course-body .title {
+  margin: 0px 15px;
+  margin-top: 15px;
+}
+.course-card-container .course-card-content .course-footer {
+  padding: 10px 0;
+  margin: 15px 15px;
+  border-top: 1px solid #e4e4e4;
+}
+.course-card-container .course-card-content .course-footer ul.prices {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.course-card-container .course-card-content .course-footer ul.prices li {
+  margin-left: 5px;
+}
+.course-card-container .course-card-content .course-footer ul.prices li .old-price {
+  color: #dc0505;
+  text-decoration: line-through;
+}
+.course-card-container:hover .course-card-description {
+  visibility: visible;
+  opacity: 1;
+  top: -10px;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.course-card-container .course-card-description {
+  margin-left: -15px;
+  padding: 35px 40px 22px;
+  position: absolute;
+  top: -20px;
+  background-color: #fff;
+  width: 100%;
+  min-height: 100%;
+  -webkit-box-shadow: 0 10px 30px 11px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 10px 30px 11px rgba(0, 0, 0, 0.25);
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: none;
+  transition: none;
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+  z-index: 2;
+}
+.course-card-container .course-card-description .course-head .avatar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.course-card-container .course-card-description .course-head .avatar ul li {
+  margin-right: 10px;
+}
+.course-card-container .course-card-description .course-head .avatar ul li img {
+  width: 50px;
+  border-radius: 50%;
+}
+.course-card-container .course-card-description .course-head .title {
+  margin-top: 15px;
+}
+.course-card-container .course-card-description .course-head .dates ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 10px;
+}
+.course-card-container .course-card-description .course-head .dates ul li {
+  color: #7ae87a;
+  font-size: 12px;
+}
+.course-card-container .course-card-description .course-head .dates ul li span {
+  font-weight: bolder;
+}
+.course-card-container .course-card-description .course-body .paragraphe {
+  color: #777;
+}
+.course-card-container .course-card-description .course-body .details ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+}
+.course-card-container .course-card-description .course-body .buttons ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.course-card-container .course-card-description .course-body .buttons ul li a {
+  display: block;
+  padding: 14px 15px;
+  margin: 10px 0 28px;
+  background-color: #385bce;
+  width: 100%;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+}
+.course-card-container .course-card-description .course-body .buttons ul li a:hover {
+  background-color: #17d292;
+  color: #fff !important;
+}
+.course-card-container .course-card-description .course-footer ul.prices {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.course-card-container .course-card-description .course-footer ul.prices .whish-list {
+  text-decoration: none;
+  color: #999;
+}
+.course-card-container .course-card-description .course-footer ul.prices .price {
+  font-weight: bolder;
+  font-size: 16px;
+}
+/*# sourceMappingURL=main.css.map */
